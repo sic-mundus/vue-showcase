@@ -76,32 +76,31 @@ export default {
     return {
       busy: false,
       form: {
-        email: '',
+        email: ''
       },
       rules: {
         email: [
           v => !!v || 'E-mail is required',
           v => /.+@.+/.test(v) || 'E-mail must be valid'
-        ],
+        ]
       }
     }
   },
   methods: {
     signIn () {
-
       if (this.$refs.form.validate()) {
-        this.busy = true;
+        this.busy = true
         let credentials = {
-          email: this.form.email,
+          email: this.form.email
         }
 
         this.$store.dispatch('auth/recoveryPassword', credentials)
           .then(user => {
-            this.$q.notify('E\' stata inviata un e-mail all\indirizzo indicato, con la quale è possibile reimpostare la password.');
+            this.$q.notify('E\' stata inviata un e-mail all\'indirizzo indicato, con la quale è possibile reimpostare la password.')
 
-            this.busy = false;
+            this.busy = false
 
-            this.$router.replace({ name: 'signIn' });
+            this.$router.replace({ name: 'signIn' })
           })
           .catch(error => {
             this.$q.notify({
@@ -110,7 +109,7 @@ export default {
             })
             console.error(`Not signed in: ${error.message}`)
 
-            this.busy = false;
+            this.busy = false
           })
       }
     }

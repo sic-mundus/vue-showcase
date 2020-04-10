@@ -9,8 +9,7 @@ export default ({
 }) => {
   // Register the Firebase authentication listener
   Firebase.auth().onAuthStateChanged(user => {
-
-    console.log('## onAuthStateChanged => ', user);
+    console.log('## onAuthStateChanged => ', user)
 
     if (user) {
       // Signed in. Let Vuex know.

@@ -9,28 +9,28 @@ export default {
   },
 
   getters: {
-    user(state) {
+    user (state) {
       return state.user
     },
 
-    isAuthenticated(state) {
+    isAuthenticated (state) {
       return !!state.user
     }
   },
 
   mutations: {
-    SET_USER(state, payload) {
+    SET_USER (state, payload) {
       let user = payload
       state.user = user
     },
 
-    RESET_USER(state) {
+    RESET_USER (state) {
       state.user = null
     }
   },
 
   actions: {
-    async signIn({
+    async signIn ({
       commit
     }, payload) {
       let email = payload.email
@@ -45,7 +45,7 @@ export default {
         })
     },
 
-    async signUp({
+    async signUp ({
       commit
     }, payload) {
       let email = payload.email
@@ -54,14 +54,14 @@ export default {
 
       await Firebase.auth().createUserWithEmailAndPassword(email, password)
         .then(user => {
-          //Aggiorno il displayName
+          // Aggiorno il displayName
           user.user.updateProfile({
             displayName: username
           }).then(() => {
             console.log('Aggiornato displayName. procedo con la mail di verifica')
-            return user.user.sendEmailVerification();
+            return user.user.sendEmailVerification()
           }).then(() => {
-            console.log('Fatto');
+            console.log('Fatto')
           }).catch(error => {
             throw error
           })
@@ -73,7 +73,7 @@ export default {
         })
     },
 
-    async recoveryPassword({
+    async recoveryPassword ({
       commit
     }, payload) {
       let email = payload.email
@@ -87,7 +87,7 @@ export default {
         })
     },
 
-    async signOut({
+    async signOut ({
       commit
     }) {
       await Firebase.auth().signOut()

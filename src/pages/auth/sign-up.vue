@@ -159,9 +159,8 @@ export default {
   },
   methods: {
     signIn () {
-
       if (this.$refs.form.validate()) {
-        this.busy = true;
+        this.busy = true
         let credentials = {
           email: this.form.email,
           password: this.form.password,
@@ -170,9 +169,9 @@ export default {
 
         this.$store.dispatch('auth/signUp', credentials)
           .then(user => {
-            //console.log('da page: ', this.$router)
-            //this.$router.replace({ name: 'shop' }).catch(() => { })
-            this.busy = false;
+            // console.log('da page: ', this.$router)
+            // this.$router.replace({ name: 'shop' }).catch(() => { })
+            this.busy = false
           })
           .catch(error => {
             this.$q.notify({
@@ -181,7 +180,7 @@ export default {
             })
             console.error(`Not signed in: ${error.message}`)
 
-            this.busy = false;
+            this.busy = false
           })
       }
     }

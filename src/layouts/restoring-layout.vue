@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import { mapGetters, mapActions } from 'vuex'
+import { mapGetters } from 'vuex'
 export default {
   name: 'LayoutRestoring',
   data () {
@@ -20,7 +20,7 @@ export default {
   mounted () {
     console.log('mounted restoring: authenticated', this.isAuthenticated)
     if (this.isAuthenticated) {
-      this.$router.replace('/app');
+      this.$router.replace('/app')
     } else {
       this.$router.replace('/auth')
     }
