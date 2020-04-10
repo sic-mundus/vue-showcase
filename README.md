@@ -4,6 +4,17 @@
 
 A showcase of the features offered by VueJs combined with Google Firebase & Quasar Framework
 
+This project fully features the firebase email & password authentication,\
+allowing users to join and sign in.\
+This project uses [Vue Router](https://router.vuejs.org/) to guard the urls,
+and redirect to the desired location after a successfull login.
+
+It is also possible to reset a forgotten password
+via the firebase built-in engine.
+
+In addition [Vuex](https://vuex.vuejs.org/guide/) is used to store and manage
+user data within the session
+
 
 ### Built With
 
@@ -34,11 +45,11 @@ $ yarn global add @quasar/cli
 ```sh
 git clone https://github.com/sic-mundus/vue-showcase.git
 ```
-2. Install NPM packages
+2. Install dependencies
 ```sh
 yarn
 ```
-3. Create a project in the Google Firebase console and enable the email authentication 
+3. Create a project in the [Google Firebase console](https://console.firebase.google.com/) and enable the email authentication 
 4. Add a Web App and follow the steps to get your configuration file
 5. Create a root file **firebase.conf** and paste your config. It should look as follows
 ```sh
@@ -59,18 +70,6 @@ export default firebaseConfig;
 ```sh
 quasar dev
 ```
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-This project fully features the firebase email & password authentication,\
-allowing users to join and sign in.\
-This project uses VueJs **router** to guard the urls,
-and redirect to the desired location after a successfull login.
-
-It is also possible to reset a forgotten password
-via the firebase built-in engine.
 
 <!-- ROADMAP -->
 ## Roadmap
