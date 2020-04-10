@@ -8,7 +8,7 @@
 
         <q-card
           square
-          class="shadow-24 col-12 col-sm-6 col-md-6"
+          class="shadow-24 col-12 col-sm-auto"
         >
           <q-card-section class="bg-primary">
             <h4 class="text-h5 text-white q-my-md">Home Deliveries</h4>
