@@ -64,8 +64,8 @@ quasar dev
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-This project fully features the firebase email & password autnetication,
-allowing users to join and sign in.
+This project fully features the firebase email & password authentication,\
+allowing users to join and sign in.\
 This project uses VueJs **router** to guard the urls,
 and redirect to the desired location after a successfull login.
 
