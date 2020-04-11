@@ -18,4 +18,4 @@ import Vue from 'vue'
 import {Quasar,Notify,Loading} from 'quasar'
 
 
-Vue.use(Quasar, { config: {"brand":{"primary":"#2c2c54","secondary":"#ff793f","accent":"#ff5252","dark":"#1d1d1d","positive":"#21BA45","negative":"#C10015","info":"#31CCEC","warning":"#F2C037"}},iconSet: iconSet,plugins: {Notify,Loading} })
+Vue.use(Quasar, { config: {"brand":{"primary":"#218c74","secondary":"#33d9b2","accent":"#706fd3","dark":"#1d1d1d","positive":"#21BA45","negative":"#C10015","info":"#31CCEC","warning":"#F2C037"}},iconSet: iconSet,plugins: {Notify,Loading} })

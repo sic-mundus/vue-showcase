@@ -6,7 +6,7 @@
           square
           class="shadow-24 col-12 col-sm-auto"
         >
-          <q-card-section class="bg-primary">
+          <q-card-section class="bg-primary text-center">
             <h4 class="text-h5 text-white q-my-md">Home Deliveries</h4>
             <div
               class="absolute-bottom-right q-pr-md"
@@ -20,7 +20,7 @@
                 color="accent"
               >
                 <q-tooltip
-                  content-class="bg-primary"
+                  content-class="bg-accent"
                   content-style="font-size: 16px"
                 >
                   Registra un nuovo account
@@ -102,7 +102,7 @@
                 type="submit"
                 unelevated
                 size="lg"
-                color="secondary"
+                color="accent"
                 class="full-width text-white"
                 label="Accedi"
                 :loading="busy"

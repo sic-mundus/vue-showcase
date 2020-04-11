@@ -3,8 +3,7 @@
 
     <q-page-container>
       <q-page
-        style="background: linear-gradient(#2c2c54, #706fd3);"
-        class="row items-stretch justify-center items-center"
+        class="gradient row items-stretch justify-center items-center"
       >
         <router-view />
       </q-page>
@@ -24,13 +23,7 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-.q-layout {
-  background-size: cover;
-}
-
-.jumbo {
-  position: absolute;
-  height: 50vh;
-  width: 100%;
+.gradient {
+  background: linear-gradient(to bottom right, var(--q-color-accent), var(--q-color-secondary));
 }
 </style>
