@@ -2,8 +2,12 @@
   <q-layout>
 
     <q-page-container>
-      <div class="jumbo bg-primary"></div>
-      <router-view />
+      <q-page
+        style="background: linear-gradient(#2c2c54, #706fd3);"
+        class="row items-stretch justify-center items-center"
+      >
+        <router-view />
+      </q-page>
     </q-page-container>
 
   </q-layout>

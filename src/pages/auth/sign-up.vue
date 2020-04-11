@@ -1,8 +1,4 @@
 <template>
-  <q-page
-    style="background: linear-gradient(#2c2c54, #706fd3);"
-    class="row items-stretch justify-center items-center"
-  >
     <div class="col-12 col-sm-8 col-md-6 col-lg-3">
       <div class="column justify-center full-height fit">
 
@@ -24,38 +20,41 @@
 
               <q-input
                 square
+                bottom-slots
                 :rules="rules.email"
                 v-model="form.email"
                 type="email"
                 label="Email"
                 autocomplete="email"
               >
-                <template v-slot:prepend>
+                <template v-slot:before>
                   <q-icon name="email" />
                 </template>
               </q-input>
 
               <q-input
                 square
+                bottom-slots
                 :rules="rules.username"
                 v-model="form.username"
                 type="text"
                 label="Username"
               >
-                <template v-slot:prepend>
+                <template v-slot:before>
                   <q-icon name="mdi-account" />
                 </template>
               </q-input>
 
               <q-input
                 square
+                bottom-slots
                 :rules="rules.password"
                 v-model="form.password"
                 type="password"
                 label="Password"
                 autocomplete="new-password"
               >
-                <template v-slot:prepend>
+                <template v-slot:before>
                   <q-icon name="lock" />
                 </template>
               </q-input>
@@ -103,7 +102,7 @@
                 size="lg"
                 color="secondary"
                 class="full-width text-white"
-                label="Join"
+                label="Registrati"
                 :loading="busy"
               />
             </q-card-actions>
@@ -124,7 +123,6 @@
       </div>
 
     </div>
-  </q-page>
 </template>
 
 <script>

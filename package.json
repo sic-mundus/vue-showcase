@@ -1,10 +1,10 @@
 {
   "name": "quasar-firebase-example",
   "version": "1.0.0",
-  "description": "A Quasar / Vue reference app that connects to Firebase.",
-  "productName": "Quasar with Firebase Example",
+  "description": "A Vue / Quasar reference app that connects to Firebase.",
+  "productName": "Vue Showcase",
   "cordovaId": "org.cordova.quasar.app",
-  "author": "Steve Clarke <steve@sevenview.ca>",
+  "author": "Pietro B <mrlouboltz@gmail.com>",
   "private": true,
   "scripts": {
     "lint": "eslint --ext .js,.vue src",
