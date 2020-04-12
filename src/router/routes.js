@@ -10,21 +10,27 @@ import Shop from 'pages/app/shop'
 
 export default [{ // Auth Routes
   path: '/auth',
-  redirect: 'auth/sign-in',
+  redirect: 'auth/challenge',
   component: () => import('layouts/auth-layout'),
-  children: [{
-    path: 'sign-in',
-    name: 'signIn',
-    component: () => import('pages/auth/sign-in')
-  }, {
-    path: 'sign-up',
-    name: 'signUp',
-    component: () => import('pages/auth/sign-up')
-  }, {
-    path: 'password-recovery',
-    name: 'forgotPassword',
-    component: () => import('pages/auth/forgot-password')
-  }]
+  children: [
+  // {
+  //   path: 'sign-in',
+  //   name: 'signIn',
+  //   component: () => import('pages/auth/sign-in')
+  // }, {
+  //   path: 'sign-up',
+  //   name: 'signUp',
+  //   component: () => import('pages/auth/sign-up')
+  // }, {
+  //   path: 'password-recovery',
+  //   name: 'forgotPassword',
+  //   component: () => import('pages/auth/forgot-password')
+  // },
+    {
+      path: 'challenge',
+      name: 'challenge',
+      component: () => import('pages/auth/challenge')
+    }]
 },
 
 {

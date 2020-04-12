@@ -33,7 +33,7 @@ export default ({
         // Not signed in. Redirect to login page.
         console.log('=> passa per il via')
         next({
-          name: 'signIn',
+          name: 'challenge',
           query: {
             redirect: to.name
           }

@@ -25,7 +25,7 @@ export default ({
       // Signed out. Let Vuex know.
       store.commit('auth/RESET_USER')
       router.replace({
-        name: 'signIn'
+        name: 'challenge'
       }).catch(() => {})
       new Vue(app) /* eslint-disable-line no-new */
     }
