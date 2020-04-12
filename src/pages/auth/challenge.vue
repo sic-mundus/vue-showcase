@@ -1,5 +1,5 @@
 <template>
-    <div class="col-12 col-sm-8 col-md-6 col-lg-3">
+    <div class="col-12 col-sm-auto" style="min-width:500px">
       <div class="column justify-center full-height fit">
 
         <q-card
@@ -7,7 +7,7 @@
           class="shadow-24 col-12 col-sm-auto"
         >
           <q-card-section class="bg-primary text-center">
-            <h4 class="text-h5 text-white q-my-md">Home Deliveries</h4>
+            <h4 class="text-h3 text-white q-my-md pacifico-font">Home Deliveries</h4>
              <div
               v-if="type === 'sign-in'"
               class="absolute-bottom-right q-pr-md"
